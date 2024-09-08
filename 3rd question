@@ -1,0 +1,16 @@
+N=input()
+M=input()
+f=[]
+for i in range(int(N),int(M)+1):
+    s=str(i)
+    l=len(s)
+    for j in range(l-1):
+        if abs(int(s[j])-int(s[j+1]))==1:
+            continue
+        else:
+            break
+    else:
+        f.append(int(s))
+for i in f:
+    print(i,end=' ')
+            
